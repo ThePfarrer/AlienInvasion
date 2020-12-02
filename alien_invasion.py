@@ -21,7 +21,7 @@ class AlienInvasion:
 
         self.screen = pygame.display.set_mode(
             (self.settings.screen_width, self.settings.screen_height)
-            )
+        )
         pygame.display.set_caption("Alien Invasion")
 
         # Create an instance to store game statistics,
@@ -171,7 +171,7 @@ class AlienInvasion:
         ship_height = self.ship.rect.height
         available_space_y = (
             self.settings.screen_height - (3 * alien_height) - ship_height
-            )
+        )
         number_rows = available_space_y // (2 * alien_height)
 
         # Create the full fleet of aliens.
